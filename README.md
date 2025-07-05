@@ -15,7 +15,7 @@ The official repo of "[SegAnyPET: Universal Promptable Segmentation from Positro
 * We provide model checkpoints of SegAnyPET at [Hugging Face](https://huggingface.co/YichiZhang98/SegAnyPET).
 
 
-## :Hammer: Usage
+## 🔨 Usage
 
 * Our code is adapted from [SAM-Med3D](https://github.com/uni-medical/SAM-Med3D). We are organizing our training and evaluation code and will make it publicly available soon.
 
