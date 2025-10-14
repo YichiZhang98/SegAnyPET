@@ -17,13 +17,13 @@ We have now released the labels of AutoPET-Organ dataset at `AutoPET-Organlabels
 
 ## :link: Checkpoint
 
-* We provide model checkpoints of SegAnyPET at [Hugging Face](https://huggingface.co/YichiZhang98/SegAnyPET). SegAnyPET is adapted from [SAM-Med3D](https://github.com/uni-medical/SAM-Med3D) and retains the core functionality and usage patterns, while being optimized for universal segmentation from Positron Emission Tomography images effectively.
+* We provide model checkpoints of SegAnyPET at [Hugging Face](https://huggingface.co/YichiZhang98/SegAnyPET). 
 
 
 ## 🔨 Usage
 
-* We are organizing our training and evaluation code and will make it publicly available soon.
-
+* SegAnyPET is adapted from [SAM-Med3D](https://github.com/uni-medical/SAM-Med3D) and retains the core functionality and usage patterns, while being optimized for universal segmentation from Positron Emission Tomography images effectively. 
+* As the model is designed for promptable segmentation, ground-truth labels are required to generate prompt points for evaluation. If you want to inference an image without ground-truth, please generate pseudo mask for the target region.
 
 
 ## :books: Citation
