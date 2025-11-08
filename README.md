@@ -1,5 +1,5 @@
 # SegAnyPET
-The official repo of "[SegAnyPET: Universal Promptable Segmentation from Positron Emission Tomography Images](https://arxiv.org/pdf/2502.14351)" accepted at ICCV 2025.
+The official repo of "[SegAnyPET: Universal Promptable Segmentation from Positron Emission Tomography Images](https://arxiv.org/pdf/2502.14351)" accepted by ICCV 2025.
 
 ![image](https://github.com/YichiZhang98/SegAnyPET/blob/main/fig/Overview.png)
 
@@ -30,11 +30,13 @@ We have now released the labels of AutoPET-Organ dataset at `AutoPET-Organlabels
 
 If you find this repository helpful, please consider citing:
 ```
-@article{zhang2025seganypet,
+@inproceedings{zhang2025seganypet,
   title={SegAnyPET: Universal Promptable Segmentation from Positron Emission Tomography Images},
   author={Zhang, Yichi and Xue, Le and Zhang, Wenbo and Li, Lanlan and Liu, Yuchen and Jiang, Chen and Cheng, Yuan and Qi, Yuan},
-  journal={International Conference on Computer Vision (ICCV)},
-  year={2025}
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month={October},
+  year={2025},
+  pages={21107-21116}
 }
 ```
 
