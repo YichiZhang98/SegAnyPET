@@ -1,9 +1,18 @@
 # SegAnyPET
-The official repo of "[SegAnyPET: Universal Promptable Segmentation from Positron Emission Tomography Images](https://arxiv.org/pdf/2502.14351)" accepted by ICCV 2025.
 
-![image](https://github.com/YichiZhang98/SegAnyPET/blob/main/fig/Overview.png)
+### [[ICCV'25]](https://arxiv.org/pdf/2502.14351) SegAnyPET: Universal Promptable Segmentation from Positron Emission Tomography Images 
+
+by Yichi Zhang*, Le Xue*, Wenbo Zhang, Lanlan Li, Yuchen Liu, Chen Jiang, Yuan Cheng<sup>✝</sup>, Yuan Qi<sup>✝</sup>.
+
+(* Equal Contribution. <sup>✝</sup> Corresponding authors.)
+
+
+
+
 
 ## Overview
+
+![image](https://github.com/YichiZhang98/SegAnyPET/blob/main/fig/Overview.png)
 
 * SegAnyPET is a modality-specific foundational model for universal promptable segmentation from 3D PET images. SegAnyPET is trained on a collection of 5,000+ whole-body PET images with a broader spectrum of multi-organ segmentation which can be generalized for universal segmentation from PET images.
 
