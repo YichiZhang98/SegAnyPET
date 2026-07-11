@@ -38,6 +38,44 @@ This is the official repository for "Developing Foundation Models for Universal 
 * SegAnyPET is adapted from [SAM-Med3D](https://github.com/uni-medical/SAM-Med3D) and retains the core functionality and usage patterns, while being optimized for universal segmentation from Positron Emission Tomography images effectively. 
 * As the model is designed for promptable segmentation, ground-truth labels are required to generate prompt points for evaluation. If you want to inference an image without ground-truth, please generate pseudo mask for the target region.
 
+### Requirements
+
+- Python >= 3.9
+- PyTorch >= 2.0
+- CUDA >= 11.7 (for GPU inference)
+- ~4 GB GPU memory for single-case inference
+
+### Validation
+
+To run end-to-end validation on a test dataset:
+
+```bash
+python code/validation.py \
+    --checkpoint seganypet_v2.pth \
+    --test_data_path /path/to/test_data/ \
+    --output_dir ./results \
+    --num_clicks 5 \
+    --gpu 0
+```
+
+The test data directory should be organized in nnUNet format:
+```
+test_data/
+├── imagesTs/
+│   ├── case_001.nii.gz
+│   └── case_002.nii.gz
+└── labelsTs/
+    ├── case_001.nii.gz
+    └── case_002.nii.gz
+```
+
+### Notes on Prompt-Based Inference
+
+- SegAnyPET uses an **interactive prompt mechanism**: ground-truth labels are required to generate point prompts for evaluation (simulating user clicks).
+- For inference **without ground-truth**, you can provide a pseudo-mask (e.g., from thresholding or a coarse segmentation) as the `--label` input.
+- Increasing `--num_clicks` generally improves segmentation quality at the cost of longer runtime.
+
+
 
 ## 🗼 Method
 
